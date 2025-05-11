@@ -1,0 +1,140 @@
+<!-- blacklist.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blacklist Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1200px;
+      background: white;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+      background: #002366;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .col {
+      flex: 1;
+      min-width: 220px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="date"], select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+    .buttons {
+      margin-top: 15px;
+    }
+    .buttons button {
+      padding: 8px 16px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 4px;
+      color: white;
+    }
+    .search { background: #007bff; }
+    .reset { background: #dc3545; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 25px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    th {
+      background-color: #002366;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Blacklist Details</h2>
+
+  <div class="row">
+    <div class="col">
+      <label>Visitor Name</label>
+      <input type="text" placeholder="Enter Name">
+    </div>
+    <div class="col">
+      <label>Visitor Mobile</label>
+      <input type="text" placeholder="Enter Mobile">
+    </div>
+    <div class="col">
+      <label>Visitor Company</label>
+      <input type="text" placeholder="Enter Company">
+    </div>
+    <div class="col">
+      <label>Visit Date</label>
+      <input type="date">
+    </div>
+    <div class="col">
+      <label>Host Name</label>
+      <input type="text" placeholder="Enter Host">
+    </div>
+    <div class="col">
+      <label>Blacklist</label>
+      <input type="radio" name="blacklist"> Yes
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button class="search">Search</button>
+    <button class="reset">Reset</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Visitor Name</th>
+        <th>Visitor Mobile</th>
+        <th>Company</th>
+        <th>Last Visit Date</th>
+        <th>Blacklisted</th>
+        <th>Reason</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Edit</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
